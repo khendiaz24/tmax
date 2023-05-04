@@ -1,0 +1,24 @@
+// import all scss files here, please don't remove the notes for this template
+
+// Bootstrap Grid 
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+
+@import 'libraries/fontawesome';
+
+// mostly default imports
+@import 'libraries/fonts'; // for all embedded fonts
+@import 'variables'; // all declared variables including font size, color and bg color and font families
+@import 'libraries/mixins'; // for groups of css that can be reuse like CSS3 for cross browsing
+@import 'libraries/reset'; // this includes all normalize or reset css
+@import 'libraries/easing'; // for easing
+
+// unique imports
+@import 'libraries/pace';
+@import 'libraries/preloader'; 
+
+// all customized styles
+@import 'header'; 
+@import 'footer'; 
+@import 'main'; 
