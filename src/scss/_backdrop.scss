@@ -1,0 +1,25 @@
+.layout-backdrop {
+
+  &[aria-hidden="true"] {
+
+    display: none;
+  }
+}
+
+.layout-backdrop { 
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba($black, 0.5);
+  z-index: 3;
+  @include transition(all 0.3s ease);
+  
+
+  @include media-breakpoint-up(xl) {
+
+    display: none;
+  }
+}

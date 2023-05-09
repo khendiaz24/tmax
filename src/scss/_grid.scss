@@ -1,0 +1,31 @@
+.grids {
+
+  display: flex;
+  justify-content: center;
+
+  .grid {
+
+    max-width: 248px;
+    text-align: center;
+    margin: 20px 35px;
+
+    .grid-img {
+
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-bottom: 30px;
+
+      img {
+
+        border-radius: inherit;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    flex-wrap: wrap;
+  }
+
+}

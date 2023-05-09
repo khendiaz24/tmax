@@ -1,0 +1,143 @@
+.swiper-holder {
+
+  position: relative;
+
+  .swiper-slide {
+
+    height: auto;
+  }
+
+  &.swiper-holder-folder {
+
+    padding-right: 24px;
+  
+    @include media-breakpoint-down(lg) {
+  
+      padding-right: 0;
+
+      .swiper-slide {
+  
+        width: 300px;
+      }
+    }
+  }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {  
+
+  &:after {
+
+    color: $black;
+    font-size: rem(25px) !important;
+  }
+  
+}
+
+@include media-breakpoint-down(md) {
+
+  .swiper-button-prev {  
+  
+    left: -10px !important;
+  }
+  
+  .swiper-button-next {  
+  
+    right: -10px !important;
+  }
+}
+
+.swiper-button-prev {
+
+  left: 0 !important;
+  @include transform(translateX(-120%));
+
+  &.inside {
+    
+    @include transform(translateX(0));
+    left: 20px !important;
+  }
+}
+
+.swiper-button-next {
+
+  right: 0 !important;
+  @include transform(translateX(120%));
+
+  &.inside {
+    
+    @include transform(translateX(0));
+    right: 20px !important;
+  }
+  
+}
+
+.swiper-pagination-holder {
+
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  max-width: 1300px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: calc(100% - 48px);
+  @include transform(translateX(-50%));
+
+  @include media-breakpoint-down(md) {
+
+    top: 0;
+  }
+}
+
+
+.swiper-pagination {
+
+  text-align: left;
+
+  &.swiper-pagination-inside {
+
+    bottom: 30px !important;
+  }
+
+  .swiper-pagination-bullet {
+
+    position: relative;
+    padding: 4px;
+    margin: 0 4px !important;
+    width: 12px;
+    height: 12px;    
+    background: rgba($white, 0.8);
+
+    &.swiper-pagination-bullet-active {
+
+      background: $white;
+    }
+  }
+
+  &.dark {
+
+    .swiper-pagination-bullet {
+
+      background: $black;
+      opacity: 0.3;
+
+      &.swiper-pagination-bullet-active {
+
+        opacity: 1;
+      }
+    }
+  }
+
+  // &.swiper-pagination-num {
+
+  //   .swiper-pagination-current:before{
+  //     content: "0"
+  //   }
+    
+  //   .swiper-pagination-total:before{
+  //     content: "0"
+  //   }
+  // }
+
+}

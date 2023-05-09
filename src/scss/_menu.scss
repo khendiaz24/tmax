@@ -1,0 +1,37 @@
+.menu {
+
+  font-size: rem(18px);
+
+  @include media-breakpoint-down(lg) {
+
+    display: none;
+  }
+
+  li {
+
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+
+    a {
+
+      display: block;
+      padding: 10px;
+      color: $white;
+
+      i {
+
+        font-size: rem(14px);
+        margin-left: 5px;
+      }
+    }
+
+    &:hover {
+
+      a {
+
+        color: $ash;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.form {
+
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .form-group {
+
+    margin-bottom: 20px;
+  }
+
+  .form-control {
+
+    border-radius: 5px;
+
+    &::placeholder {
+
+      color: lighten($ash, 10%);
+    }
+  }
+
+  textarea {
+
+    height: 200px;
+  }
+
+  
+}
+
+.form-btn {
+
+  display: flex;
+  text-align: left;
+
+  .btn {
+
+    min-width: 180px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

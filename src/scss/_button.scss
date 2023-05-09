@@ -1,0 +1,58 @@
+.btn {
+
+  font-size: rem(18px);
+  font-weight: 700;
+  padding: 10px 30px;
+  border-radius: 5px;
+
+  &.btn-outline {
+
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+
+      background: rgba($white , 0.2);
+    }
+  }
+
+  &.btn-outline-dark {
+
+    border: 1px solid $black;
+    color: $black;
+
+    &:hover {
+
+      background: rgba($black , 0.2);
+    }
+  }
+
+  &.btn-dark {
+
+    background: $black;
+    color: $white;
+
+    &:hover {
+
+      background: $gray;
+    }
+  }
+}
+
+.flex-btn {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn {
+
+    width: 200px;
+    margin: 5px 10px;
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    flex-direction: column;
+  }
+}

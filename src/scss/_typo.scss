@@ -1,0 +1,42 @@
+h1 {
+
+  font-size: rem(60px);
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-down(lg) {
+
+    font-size: rem(45px);
+  }
+
+  @include media-breakpoint-down(md) {
+
+    font-size: rem(38px);
+  }
+}
+
+h2 {
+  
+  font-size: rem(40px);
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  @include media-breakpoint-down(lg) {
+
+    font-size: rem(35px);
+  }
+
+}
+
+h3 {
+
+  font-size: rem(24px);
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+h5 {
+
+  font-size: rem(16px);
+  font-weight: 700;
+}

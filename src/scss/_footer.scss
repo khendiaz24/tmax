@@ -1,2 +1,96 @@
 // ionclude all your related style here in the footer, you can leave it empty if the page has no footer
-footer { z-index: 2; position: relative; }
+footer { 
+  font-size: rem(16px);
+  z-index: 2; 
+  position: relative; 
+}
+
+.footer-top {
+  
+  padding: 40px 0;
+  background: $gray;
+  color: $white;
+
+  .footer-nav {
+
+    li {
+
+      margin-bottom: 15px;
+
+      a {
+
+        color: $white;
+
+        &:hover {
+
+          color: $ash;
+        }
+      }
+    }
+  }
+
+  .footer-sns {
+
+    display: flex;
+
+    a {
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid $white;
+      color: $white;
+    }
+  }
+
+  .footer-info {
+
+    margin-bottom: 20px;
+
+    &:last-child {
+  
+      margin-bottom: 0;
+    }
+
+    .footer-infos {
+
+      display: flex;
+      margin-top: 10px;
+
+      i {
+
+        flex-shrink: 0;
+        margin-top: 1px;
+        margin-right: 10px;
+      }
+
+      a {
+
+        color: $white;
+      }
+    }
+
+  }
+}
+
+.footer-bottom {
+
+  font-size: rem(14px);
+  padding: 25px;
+  background: $black;
+  color: $white;
+  text-align: center;
+
+  span {
+
+    em {
+
+      font-style: normal;
+      padding: 0 10px;
+    }
+  }
+}

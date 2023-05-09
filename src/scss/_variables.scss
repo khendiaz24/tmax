@@ -4,8 +4,8 @@
 $maxWidth   : 1024px; // can be use as max width of the container
 
 // for fonts
-$defaultFont: 'Arial', 'Helvetica', 'Calibri'; // default font families and error support for any html tags
-$fontA      : 'Arial';
+$defaultFont: 'Calibri', 'Helvetica', 'Calibri'; // default font families and error support for any html tags
+$fontA      : 'Calibri';
 
 // for font sizes
 $fontSmall  : 12px;
@@ -23,6 +23,8 @@ $black          : #000000;
 $blue           : #00bff3;
 $red            : #e82b0d;
 $ash            : #878a8f;
+$gray            : #252525;
+$gray-500        : #404040;
 
 // for margin and padding
 $spaceOne   : 10px;

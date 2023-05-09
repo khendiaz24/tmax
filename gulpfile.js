@@ -65,6 +65,8 @@ function scripts() {
 
   var bootstrap = src([    
     paths.scripts.node + '/bootstrap/dist/js/bootstrap.js',
+    paths.scripts.node + '/lazysizes/lazysizes.js',
+    paths.scripts.node + '/swiper/swiper-bundle.min.js',
   ])
   .pipe(concat('base.min.js'))
   .pipe(dest(paths.scripts.dest))
@@ -72,6 +74,10 @@ function scripts() {
   var script = src([    
     paths.scripts.src + '/device-detect.js',
     paths.scripts.src + '/loader.js',
+    paths.scripts.src + '/dropdown.js',
+    paths.scripts.src + '/ui-menu.js',
+    paths.scripts.src + '/ui-close.js',
+    paths.scripts.src + '/swiper.js',
   ])
   .pipe(sourcemaps.init())
   .pipe(babel({

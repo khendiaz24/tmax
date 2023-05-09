@@ -1,0 +1,126 @@
+.hero-banner {
+
+  position: relative;
+  min-height: 450px;
+
+  &.hero-banner-inner {
+
+    min-height: 313px !important;
+    height: 313px !important;
+
+    .img-objectfit {
+
+      min-height: 313px !important;
+      height: 313px !important;
+    }
+  }
+
+  &:after {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: rgba($black, 0.6);
+    z-index: 1;
+  }
+
+  .img-objectfit {
+
+    min-height: 450px;
+  }
+
+  .hero-content {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: $white;
+  }
+
+  .carousel-progress {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: $gray;
+    z-index: 2;
+
+    .progress {
+      position: absolute;
+      height: 16px;
+      border-radius: 0;
+      background-color: $white;
+      animation-name: progress;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+    }
+
+    @include keyframes(progress) {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+
+    &.hero-banner-inner {
+  
+      .img-objectfit {
+  
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @include transform(translateX(-50%));
+        min-height: 313px !important;
+        height: 313px !important;
+      }
+    }
+
+    .hero-content {
+
+      position: relative;
+      padding: 50px 0;
+    }
+
+    .swiper-holder {
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      .swiper {
+
+        height: 100%;
+      }
+    }
+
+    .carousel-progress {
+
+      height: 10px;
+
+      .progress {
+
+        height: 10px;
+
+      }
+    }
+  }
+}
