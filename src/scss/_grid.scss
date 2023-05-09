@@ -29,3 +29,37 @@
   }
 
 }
+
+.img-grids {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+
+  .img-grid {
+
+    width: calc(25% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+
+    .img-grid {
+
+      width: calc(50% - 20px);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    margin-left: -15px;
+
+    .img-grid {
+
+      width: calc(50% - 15px);
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}

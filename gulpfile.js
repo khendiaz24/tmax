@@ -67,6 +67,7 @@ function scripts() {
     paths.scripts.node + '/bootstrap/dist/js/bootstrap.js',
     paths.scripts.node + '/lazysizes/lazysizes.js',
     paths.scripts.node + '/swiper/swiper-bundle.min.js',
+    paths.scripts.node + '/fslightbox/index.js',
   ])
   .pipe(concat('base.min.js'))
   .pipe(dest(paths.scripts.dest))
